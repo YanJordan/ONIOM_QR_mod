@@ -29,7 +29,7 @@ Download and install [CNS](http://cns-online.org/v1.3/), 1.3 version is preferre
 Tools and scripts are offered in scripts directory, the source codes are offered in source directory.
 
 ## Usage
-dl_gaucns_env_sh should be adjusted with correct environment path including the find.x and QM codes path.
+[dl_gaucns_env_sh](./dl_gaucns_env_sh) should be adjusted with correct environment path including the find.x and QM codes path.
 
 ### Examples
 Some simple examples are offered including multi-center scheme, quantum refinements using ONIOM scheme and other QM codes.
