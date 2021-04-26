@@ -18,12 +18,11 @@ Adjust parameter in the Makefile and complier the code to obtain the executable 
 Download and install [CNS](http://cns-online.org/v1.3/), 1.3 version is preferred, other version is not guaranteed.
 
 ### QM codes
-* Gaussian (ONIOM scheme required)
-* xTB 
-* ORCA
-* LSQC
-* Molpro (WF-in-DFT, high level in ONIOM scheme)
-* others through external.sh
+* [Gaussian](http://gaussian.com/) (ONIOM scheme required)
+* [xTB](https://github.com/grimme-lab/xtb) 
+* [ORCA](https://orcaforum.kofo.mpg.de/app.php/portal)
+* [LSQC](https://itcc.nju.edu.cn/lsqc/)
+* [Molpro](https://www.molpro.net/) (WF-in-DFT, high level in ONIOM scheme)
   
 ### Tools
 Tools and scripts are offered in scripts directory, the source codes are offered in source directory.
