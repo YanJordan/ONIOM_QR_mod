@@ -11,7 +11,7 @@ It is developped by [Oscar lab](https://faculty.sustech.edu.cn/oscarchung/en/) i
 ## Installation
 ### DL-FIND optimizer
 [DL-FIND](https://www.chemshell.org/dl-find) open-source geometry optimisation library should be downloaded.
-Then [main_dl_gaucns.f90](./main_dl_gaucns.f90) Fortran script is copied to replace the main.f90 file in DL-FIND folder. 
+Then [main_ONIOM_QR.f90](./main_ONIOM_QR.f90) Fortran script is copied to replace the main.f90 file in DL-FIND folder. 
 Adjust parameter in the Makefile and complier the code to obtain the executable file find.x.
 
 ### CNS
