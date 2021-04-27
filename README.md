@@ -33,6 +33,8 @@ Tools and scripts are offered in scripts directory, the source codes are offered
 ### Examples
 Some simple examples are offered including multi-center scheme, quantum refinements using ONIOM scheme and other QM codes.
 
+## Documentation
+A simple Manual is offered [Manual_ONIOM_QR.pdf](./Manual_ONIOM_QR.pdf).
 
 ## Citations
 
