@@ -33,5 +33,7 @@
     This program is to modifiy the layer atom of gjf file
     Input: mol.gjf, High.xyz H (H or M)'
 
-
+### QGetRSZD_res.sh
+    This program is to extract the RSZD scores from EDSTATS log.txt
+    Input: PDB
 
