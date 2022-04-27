@@ -37,4 +37,11 @@ Some simple examples are offered including multi-center scheme, quantum refineme
 A simple Manual is offered [Manual_ONIOM_QR.pdf](./Manual_ONIOM_QR.pdf).
 
 ## Citations
+YAN, Z. Y., Li, X., and Chung, L. W. Multiscale Quantum Refinement Approaches for Metalloproteins. *J. Chem. Theory Comput.* **2021**, 17. [DOI: 10.1021/acs.jctc.1c00148](https://pubs.acs.org/doi/10.1021/acs.jctc.1c00148)
+
+## Special Note to Users
+ONIOM_QR is still in the experimental stage and we do not guarantee it will work flawlessly in all your applications.
+The micro-iteration in ONIOM is not applied, because of the compatibility between DL-FIND and Gaussian, we are working on this.   
+
+This code was first uploaded to https://github.com/oscarchung-lab/ONIOM_QR, and modified here.
 
