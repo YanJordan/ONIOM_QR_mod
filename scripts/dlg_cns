@@ -14,7 +14,7 @@ then
     alpha=`grep CRYST1 $pdbf | awk '{print $5}'`
     beta=`grep CRYST1 $pdbf | awk '{print $6}'`
     gamma=`grep CRYST1 $pdbf | awk '{print $7}'`
-    group=`grep CRYST1 $pdbf | awk -F 'P' '{print $2}' | awk -F '  ' '{print $1}'`
+    group=`grep 'SYMMETRY OPERATORS FOR SPACE GROUP:' $pdbf | awk -F ':' '{print $2}' `
 
     reso=`grep 'RESOLUTION RANGE HIGH (ANGSTROMS) :' $pdbf | tail -1 | awk -F ':' '{print $2}' | awk '{print $1}'`
     resol=`grep 'RESOLUTION RANGE LOW  (ANGSTROMS) :' $pdbf | tail -1 | awk -F ':' '{print $2}' | awk '{print $1}'`
@@ -23,7 +23,7 @@ then
     #echo $a $b $c $alpha $beta $gamma $group
     #echo $reso $resol $precent
 
-    sed -i "s/s\/dlg_space_group\/\//s\/dlg_space_group\/P$group\//" sedfile
+    sed -i "s/s\/dlg_space_group\/\//s\/dlg_space_group\/$group\//" sedfile
     sed -i "s/s\/dlg_crystal_alpha\/\//s\/dlg_crystal_alpha\/$alpha\//" sedfile
     sed -i "s/s\/dlg_crystal_beta\/\//s\/dlg_crystal_beta\/$beta\//" sedfile
     sed -i "s/s\/dlg_crystal_gamma\/\//s\/dlg_crystal_gamma\/$gamma\//" sedfile
