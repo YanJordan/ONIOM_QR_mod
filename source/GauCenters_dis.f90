@@ -304,12 +304,17 @@ subroutine multicenter(numcenter, coord_center, headtails, inputfile, outputtfil
         call system('$Gauexe < Center_temp.gjf > Center_temp.out')
         !extract energy and force 
         call system("grep 'extrapolated energy' Center_temp.out | awk '{print $5}' > result.temp ")
+        
         open(16, file='result.temp',action='read')
         if(EOF(16)) then
-        close(16)
-        call system("grep 'SCF Done:' Center_temp.out | awk '{print $5}' > result.temp ")
-        else
             close(16)
+            call system("grep 'Recovered energy' Center_temp.out | awk '{print $3}' > result.temp ")
+        endif
+
+        open(16, file='result.temp',action='read')
+        if(EOF(16)) then
+            close(16)
+            call system("grep 'SCF Done:' Center_temp.out | awk '{print $5}' > result.temp ")
         endif
 
         !get energy
